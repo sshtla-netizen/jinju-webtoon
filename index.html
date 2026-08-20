@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="진주의 풍경과 기억을 웹툰으로 기록하는 개인 콘텐츠 페이지" />
+    <title>진주기록 — 개인 웹툰 아카이브</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="진주기록 홈">
+        <span class="brand-mark">珍</span>
+        <span>진주기록</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">메뉴 열기</span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="주요 메뉴">
+        <a class="active" href="#home">첫 화면</a>
+        <a href="#webtoon">웹툰</a>
+        <a href="#other">기타</a>
+        <a href="#about">소개</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">A PERSONAL WEBTOON ARCHIVE · JINJU</p>
+          <h1>오래된 성벽에는<br /><em>아직 이야기가 남아 있다.</em></h1>
+          <p class="hero-description">
+            진주의 풍경과 그 안에 머문 사람들의 기억을<br />짧은 웹툰과 작은 기록으로 전합니다.
+          </p>
+          <a class="primary-button" href="#webtoon">첫 이야기 읽기 <span aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="hero-art reveal" aria-label="대표 웹툰 미리보기">
+          <div class="sun"></div>
+          <div class="panel-card panel-back">
+            <img src="assets/webtoon/성벽이-들려준-이야기-2페이지.png" alt="성벽이 들려준 이야기 2페이지 일부" />
+          </div>
+          <div class="panel-card panel-front">
+            <img src="assets/webtoon/성벽이-들려준-이야기-1페이지.png" alt="성벽이 들려준 이야기 1페이지 일부" />
+          </div>
+          <p class="vertical-copy">오늘의 풍경에서<br />어제의 목소리를 듣다</p>
+        </div>
+        <p class="issue-label">ISSUE 001<br /><strong>2026</strong></p>
+      </section>
+
+      <section id="webtoon" class="content-section">
+        <div class="section-heading reveal">
+          <p class="section-number">01</p>
+          <div>
+            <p class="eyebrow">WEBTOON</p>
+            <h2>이어지는 이야기</h2>
+          </div>
+          <p class="section-note">두 친구가 진주성을 걸으며<br />장소에 새겨진 시간을 발견합니다.</p>
+        </div>
+
+        <article class="featured-work reveal">
+          <button class="cover-button" type="button" data-reader-open aria-label="성벽이 들려준 이야기 읽기">
+            <img src="assets/webtoon/성벽이-들려준-이야기-1페이지.png" alt="성벽이 들려준 이야기 웹툰 표지" />
+            <span class="read-stamp">READ<br />NOW</span>
+          </button>
+          <div class="work-copy">
+            <p class="work-state"><span></span> 연재 시작</p>
+            <h3>성벽이 들려준<br />이야기</h3>
+            <p>관광지인 줄로만 알았던 진주성. 윤하와 도윤은 성벽을 따라 걸으며 돌 하나하나에 담긴 선택과 기억을 마주합니다.</p>
+            <dl class="work-meta">
+              <div><dt>장르</dt><dd>역사 · 여행 · 드라마</dd></div>
+              <div><dt>배경</dt><dd>진주성 · 촉석루 · 남강</dd></div>
+              <div><dt>주인공</dt><dd>윤하 · 도윤</dd></div>
+            </dl>
+            <button class="text-button" type="button" data-reader-open>프롤로그 읽기 <span>→</span></button>
+          </div>
+        </article>
+      </section>
+
+      <section id="other" class="other-section">
+        <div class="section-heading light reveal">
+          <p class="section-number">02</p>
+          <div><p class="eyebrow">OTHER NOTES</p><h2>웹툰 밖의 기록</h2></div>
+        </div>
+        <div class="note-grid">
+          <article class="note-card reveal">
+            <p class="note-icon">✦</p><p class="note-category">CHARACTER</p>
+            <h3>윤하와 도윤,<br />두 시선의 거리</h3>
+            <p>한 명은 기억을 안내하고, 한 명은 질문합니다. 두 친구가 이야기를 바라보는 방식.</p>
+            <span>캐릭터 노트 · 01</span>
+          </article>
+          <article class="note-card featured-note reveal">
+            <p class="note-icon">⌁</p><p class="note-category">PLACE</p>
+            <h3>남강을 따라<br />걷는 오후</h3>
+            <p>촉석루에서 의암까지. 다음 장면을 찾기 위해 걸었던 짧은 답사 기록입니다.</p>
+            <span>장소 노트 · 02</span>
+          </article>
+          <article class="note-card reveal">
+            <p class="note-icon">◐</p><p class="note-category">MAKING</p>
+            <h3>한 장면이<br />완성되기까지</h3>
+            <p>자료 조사부터 대사, 콘티, 채색까지 웹툰 한 페이지의 제작 과정을 남깁니다.</p>
+            <span>작업 노트 · 03</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section reveal">
+        <p class="eyebrow">ABOUT THIS ARCHIVE</p>
+        <blockquote>“다음 사람에게 이야기를 전하는 것도<br /><em>성을 지키는 한 가지 방법</em>일지 모릅니다.”</blockquote>
+        <p>진주의 문화유산을 친근한 이야기로 기록하는 개인 창작 공간입니다.</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#home"><span class="brand-mark">珍</span><span>진주기록</span></a>
+      <p>WEBTOON · STORY · JINJU</p>
+      <p>© <span id="year"></span> JINJU ARCHIVE</p>
+    </footer>
+
+    <dialog class="reader" aria-label="웹툰 리더">
+      <div class="reader-bar">
+        <div><strong>성벽이 들려준 이야기</strong><span>프롤로그 · 성문 앞에서</span></div>
+        <button type="button" data-reader-close aria-label="웹툰 닫기">×</button>
+      </div>
+      <div class="reader-pages">
+        <img src="assets/webtoon/성벽이-들려준-이야기-1페이지.png" alt="성벽이 들려준 이야기 1페이지" />
+        <img src="assets/webtoon/성벽이-들려준-이야기-2페이지.png" alt="성벽이 들려준 이야기 2페이지" />
+      </div>
+      <button class="reader-end" type="button" data-reader-close>이야기 닫기</button>
+    </dialog>
+  </body>
+</html>
